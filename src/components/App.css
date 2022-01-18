@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+/* Dashboard ================================================ */
+
+.selection {
+  height: 100px;
+  width: 100%;
+  background-color: grey;
+}
+
+.featured {
+  height: 400px;
+  width: 100%;
+  background-color: honeydew;
+}
