@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding-top: 60px;
 }
 
 .App-logo {
@@ -37,6 +38,53 @@
   }
 }
 
+/* Header =================================================== */
+
+.header {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.header-content-left {
+  padding: 10px 15px 10px 15px;
+  background-color: grey;
+}
+
+.header-content-right {
+  padding: 10px 15px 10px 15px;
+  background-color: grey;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.nav-item {
+  text-decoration: none;
+  margin: 0px 2px 0px 2px;
+}
+
+
 /* Dashboard ================================================ */
 
 .selection {
@@ -46,7 +94,7 @@
 }
 
 .featured {
-  height: 400px;
+  height: 100vh;
   width: 100%;
   background-color: honeydew;
 }
