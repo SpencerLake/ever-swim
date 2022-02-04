@@ -7,19 +7,23 @@ export default function Hamburger() {
 
     hamburger.active = false
 
-    console.log(hamburger.active)
+    // console.log(hamburger.active)
     
     function setActive(e) {
         e.preventDefault()
-        hamburger.active = false
+        // hamburger.active = false
+
+        // hamburger.active ? false : true ham.current.classList.add('active')
         
-        if(hamburger.active = false) {
+        if(hamburger.active === false) {
             console.log('works')
+            hamburger.active = true
             ham.current.classList.add('active')
-            hamburger.classList = true
-        } else if( hamburger.classList = true) {
+            console.log(hamburger.active)
+        } else {
             hamburger.active = false
             ham.current.classList.remove('active')
+            console.log(hamburger.active)
         }
     }
     
