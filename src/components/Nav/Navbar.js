@@ -34,11 +34,11 @@ export default function Navbar() {
                         <p href='#' className='nav-link'>One Piece</p>
                     </li>
                 </ul>
-                <Hamburger />
                 <div className='header-content-right'>
                     {/* <a className='nav-item' href='#'>Login</a> */}
                 </div>
             </nav>
+            <Hamburger />
         </div>
     )
 }

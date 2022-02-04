@@ -132,6 +132,7 @@ a {
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
 
+
   .nav-menu.active {
     left: 0;
   }
@@ -143,6 +144,7 @@ a {
   .hamburger {
     display: block;
     cursor: pointer;
+    padding: 0 1rem;
   }
 
   .hamburger.active .bar:nth-child(2) {
