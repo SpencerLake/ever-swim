@@ -7,13 +7,9 @@ export default function Hamburger() {
 
     hamburger.active = false
 
-    // console.log(hamburger.active)
     
     function setActive(e) {
         e.preventDefault()
-        // hamburger.active = false
-
-        // hamburger.active ? false : true ham.current.classList.add('active')
         
         if(hamburger.active === false) {
             console.log('works')
@@ -36,17 +32,3 @@ export default function Hamburger() {
     )
 }
 
-
-
-// const mobileMenu = (e) => {
-    //     e.preventDefault()
-    //     hamburger.classList.toggle("active");
-    //     // navMenu.classList.toggle("active");
-    //   }
-    
-    // useEffect(() => {
-        //     hamburger.addEventListener("click", mobileMenu)
-        //     return () => {
-            //       hamburger.removeEventListener('scroll', mobileMenu)
-            //     }
-            //   })
