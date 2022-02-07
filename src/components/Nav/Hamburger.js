@@ -4,6 +4,7 @@ export default function Hamburger() {
 
     const hamburger = useState()
     const ham = useRef()
+    const dropdown = useRef()
 
     hamburger.active = false
 
@@ -15,19 +16,28 @@ export default function Hamburger() {
             console.log('works')
             hamburger.active = true
             ham.current.classList.add('active')
+            dropdown.current.classList.add('active')
             console.log(hamburger.active)
         } else {
             hamburger.active = false
             ham.current.classList.remove('active')
+            dropdown.current.classList.remove('active')
             console.log(hamburger.active)
         }
     }
     
     return(
-        <div className='hamburger' ref={ham} onClick={setActive}>
-            <span className='bar'></span>
-            <span className='bar'></span>
-            <span className='bar'></span>
+        <div>
+            <div className='hamburger' ref={ham} onClick={setActive}>
+                <span className='bar'></span>
+                <span className='bar'></span>
+                <span className='bar'></span>
+            </div>
+            <div className='dropdown' ref={dropdown}>
+                <p>Tops</p>
+                <p>Bottoms</p>
+                <p>One Piece</p>
+            </div>
         </div>
     )
 }

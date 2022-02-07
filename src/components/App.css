@@ -158,7 +158,26 @@ a {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  .dropdown {
+    display: inline-block;
+    position: relative;
+    left: -100%;
+    background-color: rgb(117, 120, 141);
+    height: 400px;
+    width: 200px;
+  }
+
+  .dropdown.active {
+    display: inline-block;
+    position: relative;
+    left: auto;
+    background-color: rgb(117, 120, 141);
+    height: 400px;
+    width: 200;
+  }
 }
+
 
 
 
