@@ -3,21 +3,6 @@ import Hamburger from './Hamburger.js'
 
 export default function Navbar() {
 
-    // const navMenu = useRef
-
-    // const isSticky = (e) => {
-    //     const header = document.querySelector('.header')
-    //     const scrollTop = window.scrollY
-    //     scrollTop >= 250 ? header.classList.add('sticky') : header.classList.remove('sticky')
-    //   }
-
-    // useEffect(() => {
-    //     window.addEventListener('scroll', isSticky)
-    //     return () => {
-    //       window.removeEventListener('scroll', isSticky)
-    //     }
-    //   })
-
     return(
         <div className='header'>
             <nav className='nav-menu'>
