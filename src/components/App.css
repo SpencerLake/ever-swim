@@ -118,6 +118,11 @@ a {
   background-color: #101010;
 }
 
+.ham-option {
+  font-size: 2rem;
+  margin: .5rem 0 .5rem 0;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -145,6 +150,7 @@ a {
     display: block;
     cursor: pointer;
     padding: 0 1rem;
+    width: 57px;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -164,17 +170,22 @@ a {
     position: relative;
     left: -100%;
     background-color: rgb(117, 120, 141);
-    height: 400px;
+    /* height: 400px; */
     width: 200px;
+    transition: ease-in-out 0.2s;
   }
 
   .dropdown.active {
-    display: inline-block;
+    /* display: inline-block; */
     position: relative;
     left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: rgb(117, 120, 141);
-    height: 400px;
+    /* height: 400px; */
     width: 200;
+    transition: ease-in-out 0.2s;
   }
 }
 

@@ -34,9 +34,9 @@ export default function Hamburger() {
                 <span className='bar'></span>
             </div>
             <div className='dropdown' ref={dropdown}>
-                <p>Tops</p>
-                <p>Bottoms</p>
-                <p>One Piece</p>
+                <p className='ham-option'>Tops</p>
+                <p className='ham-option'>Bottoms</p>
+                <p className='ham-option'>One Piece</p>
             </div>
         </div>
     )
