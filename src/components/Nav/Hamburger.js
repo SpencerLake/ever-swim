@@ -1,4 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+
 
 export default function Hamburger() {
 
@@ -37,9 +39,10 @@ export default function Hamburger() {
             </div>
             {/* Dropdown Menu */}
             <div className='dropdown' ref={dropdown}>
-                <p className='ham-option'>Tops</p>
-                <p className='ham-option'>Bottoms</p>
-                <p className='ham-option'>One Piece</p>
+                <Link to='./' className='ham-option'>Home</Link>
+                <Link to='./tops' className='ham-option'>Tops</Link>
+                <Link to='./bottoms' className='ham-option'>Bottoms</Link>
+                <Link to='./one-pieces' className='ham-option'>One Piece</Link>
             </div>
         </div>
     )

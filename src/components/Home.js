@@ -1,11 +1,10 @@
-import { render } from '@testing-library/react'
 import React from 'react'
 import './App.css'
 import Dashboard from './Dashboard'
 import Navbar from './Nav/Navbar'
 
 export default function Home() {
-    render(
+    return(
         <div>
             <div className="App">
             <Navbar />

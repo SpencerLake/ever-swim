@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Hamburger from './Hamburger.js'
 
 export default function Navbar() {
@@ -10,13 +11,17 @@ export default function Navbar() {
                     <div className='nav-logo'></div>
                     <li className='nav-item'>
                         {/* Change all p tags into a tags when routes set up */}
-                        <p href='#' className='nav-link'>Tops</p>
+                        <Link to='/' className='nav-link'>Home</Link>
                     </li>
                     <li className='nav-item'>
-                        <p href='#' className='nav-link'>Bottoms</p>
+                        {/* Change all p tags into a tags when routes set up */}
+                        <Link to='/tops' className='nav-link'>Tops</Link>
                     </li>
                     <li className='nav-item'>
-                        <p href='#' className='nav-link'>One Piece</p>
+                        <Link to='/bottoms' className='nav-link'>Bottoms</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/one-pieces' className='nav-link'>One Piece</Link>
                     </li>
                 </ul>
                 <div className='header-content-right'>
