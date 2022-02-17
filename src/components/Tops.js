@@ -3,10 +3,40 @@ import Navbar from './Nav/Navbar'
 
 export default function Tops() {
     return(
-        <div className='topsPage'>
-            <Navbar />
-            <div className='content'>
-                
+        <div>
+            <div className='topsPage'>
+                <Navbar />
+                <div className='content'>
+                    <div className='itemTypes'>
+
+                    </div>
+                    <div className='allItems'>
+                        <div className='testItem'>
+                            <div className='testPic'></div>
+                            <div className='testDescrip'></div>
+                        </div>
+                        <div className='testItem'>
+                            <div className='testPic'></div>
+                            <div className='testDescrip'></div>
+                        </div>
+                        <div className='testItem'>
+                            <div className='testPic'></div>
+                            <div className='testDescrip'></div>
+                        </div>
+                        <div className='testItem'>
+                            <div className='testPic'></div>
+                            <div className='testDescrip'></div>
+                        </div>
+                        <div className='testItem'>
+                            <div className='testPic'></div>
+                            <div className='testDescrip'></div>
+                        </div>
+                        <div className='testItem'>
+                            <div className='testPic'></div>
+                            <div className='testDescrip'></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

@@ -39,10 +39,10 @@ export default function Hamburger() {
             </div>
             {/* Dropdown Menu */}
             <div className='dropdown' ref={dropdown}>
-                <Link to='./' className='ham-option'>Home</Link>
-                <Link to='./tops' className='ham-option'>Tops</Link>
-                <Link to='./bottoms' className='ham-option'>Bottoms</Link>
-                <Link to='./one-pieces' className='ham-option'>One Piece</Link>
+                <Link to='.././' className='ham-option'>Home</Link>
+                <Link to='.././tops' className='ham-option'>Tops</Link>
+                <Link to='.././bottoms' className='ham-option'>Bottoms</Link>
+                <Link to='.././one-pieces' className='ham-option'>One Piece</Link>
             </div>
         </div>
     )
