@@ -2,6 +2,13 @@ import React from 'react'
 import Navbar from './Nav/Navbar'
 
 export default function Tops() {
+
+    function getProducts() {
+        fetch()
+    } 
+
+    getProducts()
+
     return(
         <div>
             <div className='topsPage'>
