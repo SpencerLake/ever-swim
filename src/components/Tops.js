@@ -33,7 +33,7 @@ export default function Tops() {
                         </div>
                         <div className='testItem'>
                             <div className='testPic'></div>
-                            <div className='testDescrip'></div>
+                            <div className='testDescrip'>$15 - flush</div>
                         </div>
                     </div>
                 </div>
