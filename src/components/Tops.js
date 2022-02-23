@@ -1,10 +1,14 @@
 import React from 'react'
 import Navbar from './Nav/Navbar'
+import Retrieve from './Retrieve'
 
 export default function Tops() {
 
     function getProducts() {
-        fetch()
+        fetch("https://fakestoreapi.com/products")
+            .then((res) => res.json())
+            // .then(console.log(json))
+            .then((json) => Retrieve(json)) 
     } 
 
     getProducts()
