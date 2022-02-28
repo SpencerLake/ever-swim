@@ -1,12 +1,25 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 export default function Retrieve(props) {
 
-    function display(json) {
-        json.map(json=>{
-            return (
-                <div>
+    
+    
+    props.map((props)=>{
 
-                </div>
-            )
-        })
+        const iId = `"${props.id}"`
+        const iPic = props.image
+        const iTitle = props.title
+        const iDescrip = props.description
+
+        console.log(iId, iPic, iTitle, iDescrip)
+
+        return (
+            // console.log(props)
+            <div className="testItem" ref={iId}>
+                <p>{iTitle}</p>
+                <img src={iPic} className="testPic" alt='swimsuit'></img>
+                <p className='testDescrip'>{iDescrip}</p>
+            </div>
+        )
+    })
+}
